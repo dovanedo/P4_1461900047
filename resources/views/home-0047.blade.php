@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
 </head>
 
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-success">
+  <a class="navbar-brand">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Sf9cnFU4xu0UO8TVY5ioWQHaEg%26pid%3DApi&f=1" width="30" height="30" class="d-inline-block align-top" alt="">
+    Pengembangan Teknologi Web
+  </a>
+</nav>
+
 <body>
     <div class="container mt-3">
         <h2 class="mt-5">Data Dokter</h2>
@@ -17,7 +25,7 @@
             <div class="d-flex">
             </div>
             <div class="mr-2 mb-2">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Import</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal">Import</button>
             </div>
         </div>
         <table class="table table-bordered">
@@ -58,13 +66,17 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <button type="submit" class="btn btn-success">Save changes</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <div class="footer">
+		<center>Copyright &copy; 2021 - <a href="https://www.instagram.com/dovaneap">dovanedo</a></center>
+	</div>
 </body>
 
 <script src="{{ URL::asset('js/app.js') }}"></script>
