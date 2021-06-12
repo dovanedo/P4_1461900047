@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\KelasController;
+use App\Http\Controllers\DokterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,5 +13,5 @@ use App\Http\Controllers\KelasController;
 |
 */
 
-Route::get("/", [KelasController::class, 'index']);
-Route::get("export", [KelasController::class, 'Export']);
+Route::get('/', [DokterController::class, 'index']);
+Route::post("dokter-import", [DokterController::class, 'import'])->name("dokter.import");
