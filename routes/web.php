@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\KelasController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get("/", [KelasController::class, 'index']);
+Route::get("export", [KelasController::class, 'Export']);
